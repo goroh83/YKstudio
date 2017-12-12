@@ -1,7 +1,7 @@
 @import 'normalize.css';
 
 @font-face {
-    font-family: 'Didot sRegular';
+    font-family: 'Didot Regular';
     /*  src: url('webfont.eot');  IE9 Compat Modes */
     src: url('../fonts/DidotRegular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
@@ -14,6 +14,21 @@ body {
     margin: 10px;
     padding: 20px;
     max-width: 1920px;
+    color: #060606;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    line-height: 18px;
+}
+
+h2 {
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
 }
 
 header {
@@ -23,7 +38,6 @@ header {
 
 .nav {
     flex: 1;
-    /*    border: 1px solid black;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,11 +59,11 @@ header {
 
 nav {
     flex: 1;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 0;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.2em;
-    /*    line-height: 1em;*/
+    line-height: 14px;
 }
 
 .brand__header {
@@ -91,7 +105,7 @@ nav {
     flex: 5;
     overflow-x: hidden;
     overflow-y: hidden;
-    height: 75vh;
+    max-height: 75vh;
     margin-left: 30px;
 }
 
@@ -108,7 +122,7 @@ nav {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-    background-color: rgba(255,255,255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     position: relative;
     cursor: pointer;
 }
@@ -147,15 +161,83 @@ nav {
 
 .dot {
     width: 6px;
-	height: 6px;
-	background-color: rgba(0,0,0, .25);
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+    height: 6px;
+    background-color: rgba(0, 0, 0, .25);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
     display: inline-block;
     margin-right: 10px;
+    transition: all 1s;
 }
 
 .dot-active {
-    background-color: rgba(0,0,0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/************** ABOUT section  *************/
+
+.about {
+    display: flex;
+    margin-top: 150px;
+}
+
+.about__leftSide {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about__leftSide h2 {
+    margin-top: 0px;
+    display: inline-block;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 8px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.about__rightSide {
+    flex: 5;
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSide__col1 {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSide__col1 p {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rightSide__col1-para1, .rightSide__col1-para2 {
+    margin-bottom: 100px;
+}
+
+
+.rightSide__col1-para3 {
+    border: 1px solid black;
+    padding: 20px 50px;
+}
+
+.rightSide__col2 {
+    flex: 2;
+}
+
+.violin-img {
+    max-height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    /*    transform: translate(-10%, -50%);*/
 }
