@@ -1,0 +1,138 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: 'Didot sRegular';
+    /*  src: url('webfont.eot');  IE9 Compat Modes */
+    src: url('../fonts/DidotRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+
+body {
+    font-size: 16px;
+    --gold: #e5d28d;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    max-width: 1920px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav {
+    flex: 1;
+    /*    border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 0.49em;
+    text-align: center;
+    padding: 3px;
+}
+
+nav {
+    flex: 1;
+    padding-top: 50px;
+    padding-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.2em;
+    /*    line-height: 1em;*/
+}
+
+.brand__header {
+    display: block;
+    padding-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+    margin-top: 0;
+    /*    font-family: 'Didot Regular', sans-serif;*/
+}
+
+.brand__header::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.5px;
+    bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--gold);
+}
+
+.brand__text {
+    text-transform: uppercase;
+    display: block;
+    font-size: 0.5em;
+    margin-top: 0;
+    padding-top: 0px;
+    margin-top: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/*  CAROUSEL  */
+
+.carousel {
+    position: relative;
+    flex: 5;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 75vh;
+    margin-left: 30px;
+}
+
+.carousel__buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 200;
+}
+
+.prev,
+.next {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: rgba(255,255,255, 0.6);
+    position: relative;
+    cursor: pointer;
+}
+
+.next {
+    transform: rotate(180deg);
+}
+
+.prev-btn,
+.next-btn {
+    height: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+.siema {
+    max-width: 100%;
+}
+
+
+.carousel__image {
+    width: 100%;
+    height: auto;
+}
