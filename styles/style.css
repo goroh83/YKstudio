@@ -11,11 +11,18 @@ body {
     font-size: 16px;
     --gold: #e5d28d;
     box-sizing: border-box;
+/*
     margin: 10px;
     padding: 20px;
+*/
     max-width: 1920px;
     color: #060606;
     font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    margin: 10px;
+    padding: 20px;
 }
 
 p {
@@ -219,13 +226,13 @@ nav {
     margin-right: auto;
 }
 
-.rightSide__col1-para1, .rightSide__col1-para2 {
+.rightSide__col1-para1,
+.rightSide__col1-para2 {
     margin-bottom: 100px;
 }
 
-
 .rightSide__col1-para3 {
-    border: 1px solid black;
+    border: 1px solid #060606;
     padding: 20px 50px;
 }
 
@@ -239,5 +246,43 @@ nav {
     margin-left: auto;
     margin-right: auto;
     opacity: 0.5;
-    /*    transform: translate(-10%, -50%);*/
+}
+
+/************** TEACHING section  *************/
+
+.teaching {
+    margin-top: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: #fcfcfc;
+}
+
+.teaching__header {
+    display: block;
+    padding-bottom: 150px;
+    position: relative;
+}
+.teaching__header h2 {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    flex: 1;
+    display: inline-block;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 8px;
+}
+
+.teaching-container {
+    display: flex;
+}
+
+.teaching__left, .teaching__right {
+    flex: 1;
+}
+
+.teaching__right {
+    align-self: flex-end;
+    margin: 50px auto;
+    border-top:
 }
