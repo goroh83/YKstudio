@@ -29,6 +29,11 @@
             </div>
         </div>
         <div class="carousel">
+            <div class="carousel__dots">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+            </div>
             <div class="carousel__buttons">
                 <div class="prev"><img src="img/arrowLeft.png" alt="" class="prev-btn"></div>
                 <div class="next"><img src="img/arrowLeft.png" alt="" class="next-btn"></div>
@@ -59,5 +64,7 @@
         loop: true,
         onInit: () => {},
         onChange: () => {},
+        onInit: printSlideIndex,
+        onChange: printSlideIndex,
     });
 </script>
