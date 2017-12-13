@@ -11,13 +11,13 @@ body {
     font-size: 16px;
     --gold: #e5d28d;
     box-sizing: border-box;
-/*
+    /*
     margin: 10px;
     padding: 20px;
 */
     max-width: 1920px;
     color: #060606;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
@@ -26,16 +26,25 @@ body {
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 0.65em;
     letter-spacing: 2px;
     line-height: 18px;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-size: 0.85em;
+    font-size: 0.75em;
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
 
+blockquote {
+    font-size: 0.65em;
+    letter-spacing: 2px;
+    line-height: 18px;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 header {
@@ -68,7 +77,7 @@ nav {
     flex: 1;
     padding-top: 100px;
     padding-bottom: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.2em;
     line-height: 14px;
 }
@@ -262,27 +271,54 @@ nav {
     padding-bottom: 150px;
     position: relative;
 }
+
 .teaching__header h2 {
     position: absolute;
     left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     flex: 1;
     display: inline-block;
     border-bottom: 1px solid var(--gold);
     padding-bottom: 8px;
 }
 
-.teaching-container {
-    display: flex;
+.teaching-container {}
+
+.teaching__top {
+    max-width: 50%;
 }
 
-.teaching__left, .teaching__right {
+.teaching__top img {
+    max-width: 60%;
+    display: block;
+    margin: auto auto;
+}
+
+.teaching__bottom {
+    display: flex;
+    position: relative;
+    margin: 75px auto 150px auto;
+}
+
+.quote {
+    display: inline-block;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote1 {
     flex: 1;
 }
 
-.teaching__right {
-    align-self: flex-end;
-    margin: 50px auto;
-    border-top:
+.quote2 {
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+.quote2 blockquote {
+    display: block;
 }
