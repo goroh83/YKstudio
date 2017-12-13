@@ -82,15 +82,34 @@ nav {
     line-height: 14px;
 }
 
+.section__header {
+    display: block;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+.section__header h2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    flex: 1;
+    display: inline-block;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 8px;
+}
+
+.brand span {
+font-family: 'Playfair Display', serif;
+}
+
 .brand__header {
     display: block;
     padding-bottom: 10px;
     position: relative;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     margin-bottom: 12px;
     margin-top: 0;
-    /*    font-family: 'Didot Regular', sans-serif;*/
 }
 
 .brand__header::before {
@@ -106,12 +125,12 @@ nav {
 .brand__text {
     text-transform: uppercase;
     display: block;
-    font-size: 0.5em;
+    font-size: 0.4em;
     margin-top: 0;
     padding-top: 0px;
     margin-top: 0;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 }
 
 /*  CAROUSEL  */
@@ -205,14 +224,6 @@ nav {
     align-items: flex-start;
 }
 
-.about__leftSide h2 {
-    margin-top: 0px;
-    display: inline-block;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 8px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .about__rightSide {
     flex: 5;
@@ -266,21 +277,6 @@ nav {
     background: #fcfcfc;
 }
 
-.teaching__header {
-    display: block;
-    padding-bottom: 150px;
-    position: relative;
-}
-
-.teaching__header h2 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    flex: 1;
-    display: inline-block;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 8px;
-}
 
 .teaching-container {}
 
@@ -322,3 +318,5 @@ nav {
 .quote2 blockquote {
     display: block;
 }
+
+/************** STUDIO section  *************/
