@@ -99,7 +99,7 @@ nav {
 }
 
 .brand span {
-font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .brand__header {
@@ -273,7 +273,6 @@ font-family: 'Playfair Display', serif;
 .teaching {
     margin-top: 150px;
     padding-top: 150px;
-    padding-bottom: 150px;
     background: #fcfcfc;
 }
 
@@ -298,7 +297,7 @@ font-family: 'Playfair Display', serif;
 
 .quote {
     display: inline-block;
-    max-width: 40%;
+    max-width: 32%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -320,3 +319,48 @@ font-family: 'Playfair Display', serif;
 }
 
 /************** STUDIO section  *************/
+
+.studio {
+    display: flex;
+}
+
+.studio__left,
+.studio__right {
+    flex: 1;
+    position: relative;
+}
+
+.studio__left {
+    background: #ffffff;
+}
+
+.studio__right {
+    background: #f4f4f4;
+}
+
+.studio__right h2 {
+    padding-top: 150px;
+}
+
+.studio__left img {
+    opacity: 0.5;
+    display: block;
+    max-width: 150px;
+    margin: auto auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.studio__right-para p {
+    max-width: 60%;
+    display: block;
+    margin: 150px auto 100px auto;
+}
+
+.studio__right-para3 {
+    border: 1px solid #060606;
+    padding: 20px 50px;
+}
