@@ -52,6 +52,11 @@ header {
     flex-wrap: wrap;
 }
 
+.section__header h1 {
+    position: absolute;
+    left: -1000%;
+}
+
 .nav {
     flex: 1;
     display: flex;
