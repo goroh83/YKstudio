@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -97,27 +97,64 @@
                 </div>
             </div>
         </section>
+        <section class="contact">
+            <div class="section__header">
+                <h2>Contact</h2>
+            </div>
+            <div class="contact__content">
+                <div class="contact__left">
+                    <div class="contact__left-form">
+                        <form action="contact.php" method="POST">
+                            <br>
+                            <label for="name">Your name</label>
+                            <input class="form-control" type="text" name="name" id="name">
+                            <br>
+                            <label for="email">Your email</label>
+                            <input class="form-control" type="email" name="email" id="email">
+                            <br>
+                            <label for="antispam" class="antispam">Leave this empty:
+                        <input type="text" name="url" />
+                    </label>
+                            <label for="textarea">Message</label>
+                            <textarea rows="10" cols="40" class="form-control" name="msg" id="msg">
+                    </textarea>
+                            <br>
+                            <button id="submit-btn">
+                        <input class="btn-submit" type="submit" value="send message">
+                    </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact__right">
+                    <address>
+                    <a href="mailto:eunicekim@gmail.com.com">eunicekim@gmail.com</a><br>
+                    <a href="tel:5551234567">(555)123-4567</a><br>
+                    <p>21045 Columbia, MD</p>
+                </address>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="script/siema.min.js"></script>
+    <script>
+        const mySiema = new Siema({
+            selector: '.siema',
+            duration: 400,
+            easing: 'ease-out',
+            perPage: 1,
+            startIndex: 0,
+            draggable: true,
+            multipleDrag: true,
+            threshold: 20,
+            loop: true,
+            onInit: () => {},
+            onChange: () => {},
+            onInit: printSlideIndex,
+            onChange: printSlideIndex,
+        });
+    </script>
 </body>
 
 </html>
-<script src="script/script.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="script/siema.min.js"></script>
-<script>
-    const mySiema = new Siema({
-        selector: '.siema',
-        duration: 400,
-        easing: 'ease-out',
-        perPage: 1,
-        startIndex: 0,
-        draggable: true,
-        multipleDrag: true,
-        threshold: 20,
-        loop: true,
-        onInit: () => {},
-        onChange: () => {},
-        onInit: printSlideIndex,
-        onChange: printSlideIndex,
-    });
-</script>

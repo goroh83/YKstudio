@@ -25,7 +25,7 @@ body {
     padding: 20px;
 }
 
-p {
+p,a  {
     font-size: 0.65em;
     letter-spacing: 2px;
     line-height: 18px;
@@ -340,7 +340,7 @@ nav {
 }
 
 .studio__right {
-    background: #f4f4f4;
+    background: #fafafa;
 }
 
 .studio__right h2 {
@@ -369,3 +369,58 @@ nav {
     border: 1px solid #060606;
     padding: 20px 50px;
 }
+
+/************** CONTACT section  *************/
+
+.contact .section__header {
+    display: flex;
+    max-width: 50%;
+}
+
+.contact .section__header h2 {
+    flex: 1;
+    max-width: 50%;
+    display: inline-block;
+}
+
+.contact__content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.section__header {
+     padding-top: 150px;   
+}
+.contact__left,
+.contact__right {
+    flex: 1;
+    position: relative;
+}
+
+.contact__left,
+.contact__right {
+    border: 1px solid red;
+}
+
+.contact__left {
+    text-align: left;
+}
+
+address, label {
+    font-style: normal;
+    line-height: 0.65em;
+}
+
+address a {
+    text-decoration: none;
+    color: #060606;
+    font-family: 'Poppins', sans-serif;
+}
+
+input, textarea {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
