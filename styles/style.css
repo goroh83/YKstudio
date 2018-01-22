@@ -25,7 +25,7 @@ body {
     padding: 20px;
 }
 
-p,a  {
+p, a  {
     font-size: 0.65em;
     letter-spacing: 2px;
     line-height: 18px;
@@ -392,6 +392,7 @@ nav {
 .section__header {
      padding-top: 150px;   
 }
+
 .contact__left,
 .contact__right {
     flex: 1;
@@ -400,11 +401,23 @@ nav {
 
 .contact__left,
 .contact__right {
-    border: 1px solid red;
+    display: block;
 }
 
-.contact__left {
+.contact__left-form {
     text-align: left;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.contact__right address {
+    display: block;
+    text-align: left;   
+}
+
+label {
+      font-size: 0.85em;  
 }
 
 address, label {
@@ -413,9 +426,15 @@ address, label {
 }
 
 address a {
+    line-height: 2em;
+    font-size: 0.65em;
     text-decoration: none;
     color: #060606;
     font-family: 'Poppins', sans-serif;
+}
+
+.antispam {
+    display: none;
 }
 
 input, textarea {
@@ -423,4 +442,3 @@ input, textarea {
     border-left: none;
     border-right: none;
 }
-
