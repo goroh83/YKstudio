@@ -25,11 +25,17 @@ body {
     padding: 20px;
 }
 
-p, a  {
+p  {
     font-size: 0.65em;
     letter-spacing: 2px;
     line-height: 18px;
     text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #060606;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -372,6 +378,11 @@ nav {
 
 /************** CONTACT section  *************/
 
+.contact {
+    margin-top: 150px;
+}
+
+
 .contact .section__header {
     display: flex;
     max-width: 50%;
@@ -389,10 +400,6 @@ nav {
     align-items: start;
 }
 
-.section__header {
-     padding-top: 150px;   
-}
-
 .contact__left,
 .contact__right {
     flex: 1;
@@ -405,10 +412,8 @@ nav {
 }
 
 .contact__left-form {
-    text-align: left;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: center;
 }
 
 .contact__right address {
@@ -416,8 +421,15 @@ nav {
     text-align: left;   
 }
 
+address a {
+    font-size: 0.65em;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
 label {
-      font-size: 0.85em;  
+      padding-top: 0.85em;  
 }
 
 address, label {
@@ -425,13 +437,6 @@ address, label {
     line-height: 0.65em;
 }
 
-address a {
-    line-height: 2em;
-    font-size: 0.65em;
-    text-decoration: none;
-    color: #060606;
-    font-family: 'Poppins', sans-serif;
-}
 
 .antispam {
     display: none;
@@ -441,4 +446,83 @@ input, textarea {
     border-top: none;
     border-left: none;
     border-right: none;
+}
+
+.contact__left-form form {
+    position: relative;
+}
+
+.btn-send {
+    margin-top: 20px;
+    display: block;
+
+    text-align: right;
+ 
+}
+
+.btn-send a {
+    border: 1px solid #252424;
+    padding: 5px 10px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 3em;
+    font-size: 0.65em;
+    text-decoration: none;
+    color: #060606;
+    color: #060606;
+    font-family: 'Poppins', sans-serif;
+}
+}
+
+
+@media only screen and (max-width: 860px) {
+    nav {
+        padding-top: 0;
+    }
+    
+    .section__header {
+    padding-bottom: 75px;
+    }
+    
+    
+    /*    ABOUT */
+    .about {
+        margin-top: 75px;
+    }
+    
+    .about__rightSide {
+        flex-direction: column;
+    }
+    
+    .rightSide__col1-para1, .rightSide__col1-para2{
+        margin-bottom: 50px;
+    }
+    
+    .violin-img {
+        padding-top: 100px;
+    }
+    
+    
+    /*    TEACHING */
+    .teaching {
+    margin-top: 75px;
+    padding-top: 75px;
+    background: #fcfcfc;
+    }
+    
+    .teaching__bottom {
+    display: flex;
+    position: relative;
+    margin: 75px auto 75px auto;
+    }
+    
+    
+    /*    CONTACT */
+    
+    .contact {
+    margin-top: 75px;
+}
 }
